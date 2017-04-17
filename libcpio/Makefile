@@ -19,6 +19,6 @@ CFILES := $(patsubst $(SOURCE_DIR)/%,%,$(wildcard $(SOURCE_DIR)/src/*.c))
 # Header files/directories this library provides
 HDRFILES := $(wildcard $(SOURCE_DIR)/include/*)
 
-CFLAGS += -Wall -W
+CFLAGS += -Wall -W -mcmodel=medany
 
 include $(SEL4_COMMON)/common.mk
